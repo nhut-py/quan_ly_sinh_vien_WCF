@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59991/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/service" />
+  <xs:element name="hienthisv">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthisvResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="hienthisvResult" nillable="true" type="q1:ArrayOfSinhVien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthikhoahoc">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthikhoahocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="hienthikhoahocResult" nillable="true" type="q2:ArrayOfKhoaHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timSv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timSvResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timSvResult" nillable="true" type="q3:SinhVien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_sinhvien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_sinhvienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timma_sinhvienResult" nillable="true" type="q4:ArrayOfSinhVien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_sinhvien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HoTen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GioiTinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NgaySinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NoiSinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_sinhvienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="add_sinhvienResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_sinhvien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_sinhvienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="delete_sinhvienResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_sinhvien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HoTen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GioiTinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NgaySinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NoiSinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_sinhvienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="update_sinhvienResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_khoahoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_khoahocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timma_khoahocResult" nillable="true" type="q5:ArrayOfKhoaHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timkh">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timkhResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timkhResult" nillable="true" type="q6:KhoaHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_khoahoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaCTDT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TenKH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_khoahocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="add_khoahocResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_khoahoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaCTDT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TenKH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_khoahocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="update_khoahocResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_khoahoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_khoahocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="delete_khoahocResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthimonhoc">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthimonhocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="hienthimonhocResult" nillable="true" type="q7:ArrayOfMonHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_monhoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TenMH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_monhocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="add_monhocResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_monhoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_monhocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="delete_monhocResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_monhoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_monhocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timma_monhocResult" nillable="true" type="q8:ArrayOfMonHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timmh">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timmhResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timmhResult" nillable="true" type="q9:MonHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_monhoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TenMH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_monhocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="update_monhocResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthilop">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthilopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="hienthilopResult" nillable="true" type="q10:ArrayOfLop" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_lop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TenLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_lopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="add_lopResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_lop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_lopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="delete_lopResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_lop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timma_lopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timma_lopResult" nillable="true" type="q11:ArrayOfLop" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timlop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timlopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="timlopResult" nillable="true" type="q12:Lop" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_lop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TenLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_lopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="update_lopResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthiChuongTrinh">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hienthiChuongTrinhResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/service" minOccurs="0" name="hienthiChuongTrinhResult" nillable="true" type="q13:ArrayOfCT_DaoTao" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

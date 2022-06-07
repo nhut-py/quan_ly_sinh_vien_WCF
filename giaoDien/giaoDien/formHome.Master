@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="formHome.master.cs" Inherits="giaoDien.formHome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>https://github.com/nhut-py/</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://github.com/nhut-py/">nhut-py
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://localhost:44386/QL_sinhVien/sinhVien.aspx">Quản lý sinh viên</a></li>
+                    <li><a href="https://localhost:44386/QL_monHoc/monHoc.aspx">Quản lý môn học</a></li>
+                    <li><a href="https://localhost:44386/QL_lop/lop.aspx">Quản lý lớp</a></li>
+                    <li><a href="https://localhost:44386/QL_khoaHoc/khoaHoc.aspx">Quản lý khóa học</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron" style="height: 720px; background-color: white;">
+        <form id="formHome" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentHome" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>nhutnhut.pip <a href="https://github.com/nhut-py/"></a></p>
+    </footer>
+</body>
+</html>
